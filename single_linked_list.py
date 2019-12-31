@@ -46,6 +46,9 @@ class Single_Linked_List:
         while(temp.next!=None):
             temp=temp.next
         temp.next=Node(value)
+    def delete_at_first(self):
+        second_node=self.root.next.next
+        self.root.next=second_node
 a=Single_Linked_List([1,2,3,4,5,6])
 a.print_list()
 #print(a.search_list(15))
