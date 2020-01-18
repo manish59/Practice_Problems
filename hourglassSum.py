@@ -6,12 +6,15 @@ def hourglassSum(arr):
                     sum=arr[i][j]+arr[i][j+1]+arr[i][j+2]+arr[i+1][j+1]+arr[i+2][j]+arr[i+2][j+1]+arr[i+2][j+2]
                     #print(sum)
                     sum_list_hour_glass.append(sum)
+    print(sum_list_hour_glass)
     return max(sum_list_hour_glass)
 if __name__ == "__main__":
-    arr=[[1, 1, 1, 0, 0, 0], 
-         [0, 1, 0, 0, 0, 0], 
-         [1, 1, 1, 0, 0, 0], 
-         [0, 0, 2, 4, 4, 0], 
-         [0, 0, 0, 2, 0, 0], 
-         [0, 0, 1, 2, 4, 0]]    
-    hourglassSum(arr)
+    arr=[
+        [-1, 1, -1, 0, 0, 0],
+        [0, -1, 0, 0, 0, 0],
+        [-1, -1, -1, 0 ,0, 0],
+        [0 ,-9 ,2 ,-4 ,-4, 0],
+        [-7, 0, 0, -2, 0, 0],
+        [0 ,0, -1, -2, -4, 0]
+    ]
+    print(hourglassSum(arr))
